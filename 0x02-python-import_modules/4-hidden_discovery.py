@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+import hidden_4
 if __name__ == "__main__":
-    import hidden_4
-    for i in range(len(dir(hidden_4))):
-        if dir(hidden_4)[i][:2] != "__":
-            print(f"{dir(hidden_4):s}")
+    for module in dir(hidden_4):
+        if module[:2] != "__":
+            print(f"{module:s}")
