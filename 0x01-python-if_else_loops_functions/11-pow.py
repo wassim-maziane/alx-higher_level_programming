@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 def pow(a, b):
     res = 1
-    if b >= 0:
-        for i in range(b):
-            res = res * a
-    else:
-        for i in range(-b):
-            res = res / a
-    return res
+    base = 1
+    nb = 0
+    if b < 0:
+        nb = b
+        b = (-1) * b
+    for i in range(b):
+        res *= a
+        base = res * res
+    if nb < 0:
+        result /= base
+    return result
