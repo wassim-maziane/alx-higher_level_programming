@@ -10,5 +10,5 @@ def pow(a, b):
         res *= a
         base = res * res
     if nb < 0:
-        result /= base
-    return result
+        res /= base
+    return res
