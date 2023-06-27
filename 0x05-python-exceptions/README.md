@@ -1,3 +1,1 @@
-# Python - Exceptions
-
-* *Language:* Python
+initalization readme.md
