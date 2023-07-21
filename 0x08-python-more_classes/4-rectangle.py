@@ -19,7 +19,7 @@ class Rectangle:
         return res
 
     def __repr__(self):
-        return "Rectangle(" + self.width + ", " + self.height + ")"
+        return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
 
     @property
     def width(self):
